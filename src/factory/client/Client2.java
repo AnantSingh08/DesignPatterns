@@ -1,5 +1,6 @@
 package factory.client;
 
+import factory.factory.PokeFactory;
 import factory.models.Charizard;
 import factory.models.Pikachu;
 import factory.models.Pokemon;
@@ -15,17 +16,7 @@ public class Client2 {
 
         String type = scanner.nextLine();
 
-        Pokemon pokemon;
-
-        if(type.equalsIgnoreCase("Pikachu")) {
-            pokemon = new Pikachu();
-        } else if(type.equalsIgnoreCase("Charizard")) {
-            pokemon = new Charizard();
-        } else if(type.equalsIgnoreCase("Squirtle")) {
-            pokemon = new Squirtle();
-        } else {
-            throw new IllegalArgumentException("Unknown Pokemon Type: "+ type);
-        }
+        Pokemon pokemon = PokeFactory.createPokemon(type);
 
         pokemon.move();
         pokemon.attack();
