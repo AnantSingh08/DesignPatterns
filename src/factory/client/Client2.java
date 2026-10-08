@@ -1,10 +1,7 @@
 package factory.client;
 
 import factory.factory.PokeFactory;
-import factory.models.Charizard;
-import factory.models.Pikachu;
 import factory.models.Pokemon;
-import factory.models.Squirtle;
 
 import java.util.Scanner;
 
