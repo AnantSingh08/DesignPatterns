@@ -26,5 +26,8 @@ public class Client1 {
         } else {
             throw new IllegalArgumentException("Unknown Pokemon Type: "+ type);
         }
+
+        pokemon.move();
+        pokemon.attack();
     }
 }
