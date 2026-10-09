@@ -1,4 +1,4 @@
-package builder;
+package creational.builder;
 
 import lombok.Getter;
 

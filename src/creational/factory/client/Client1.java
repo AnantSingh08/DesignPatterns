@@ -1,7 +1,7 @@
-package factory.client;
+package creational.factory.client;
 
-import factory.factory.PokeFactory;
-import factory.models.Pokemon;
+import creational.factory.factory.PokeFactory;
+import creational.factory.models.Pokemon;
 
 import java.util.Scanner;
 

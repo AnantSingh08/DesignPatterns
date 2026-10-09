@@ -1,4 +1,4 @@
-package factory.models;
+package creational.factory.models;
 
 public class Squirtle extends Pokemon {
     public Squirtle()

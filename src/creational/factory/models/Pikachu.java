@@ -1,4 +1,4 @@
-package factory.models;
+package creational.factory.models;
 
 public class Pikachu extends Pokemon {
     public Pikachu()

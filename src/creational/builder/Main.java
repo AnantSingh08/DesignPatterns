@@ -1,4 +1,4 @@
-package builder;
+package creational.builder;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class Main {
                .setCc("n@gmail.com")
                .build();
 
-        // Advantage of builder design patten
+        // Advantage of creational.builder design patten
         // 1. creation of complex objects step by step
         // 2. immutable
 

@@ -1,9 +1,9 @@
-package factory.factory;
+package creational.factory.factory;
 
-import factory.models.Charizard;
-import factory.models.Pikachu;
-import factory.models.Pokemon;
-import factory.models.Squirtle;
+import creational.factory.models.Charizard;
+import creational.factory.models.Pikachu;
+import creational.factory.models.Pokemon;
+import creational.factory.models.Squirtle;
 
 public class PokeFactory {
     public static Pokemon createPokemon(String type) {
