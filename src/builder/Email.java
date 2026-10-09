@@ -13,19 +13,12 @@ public class Email {
     private String bcc;
     private List<String> attachments;
 
-    public Email(String to, String subject, String body, String cc, String bcc, List<String> attachments) {
-        this.to = to;
-        this.subject = subject;
-        this.body = body;
-        this.cc = cc;
-        this.bcc = bcc;
-        this.attachments = attachments;
-    }
-
-    // Multiple Constructors approach, we can make 2^6 constructors. This will lead to constructor explosion
-    public Email(String to, String subject, String body) {
-        this.to = to;
-        this.subject = subject;
-        this.body = body;
+     Email(EmailBuilder builder) {
+        this.to = builder.getTo();
+        this.subject = builder.getSubject();
+        this.body = builder.getBody();
+        this.cc = builder.getCc();
+        this.bcc = builder.getBcc();
+        this.attachments = builder.getAttachments();
     }
 }
