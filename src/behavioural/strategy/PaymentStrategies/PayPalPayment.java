@@ -1,0 +1,14 @@
+package behavioural.strategy.PaymentStrategies;
+
+public class PayPalPayment implements PaymentStrategy {
+    private String email;
+
+    public PayPalPayment(String pin) {
+        this.email = email;
+    }
+
+    @Override
+    public void pay(double amount) {
+        System.out.println("Processing $"+ amount + " payment through PayPal for "+email);
+    }
+}
